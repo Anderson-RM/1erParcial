@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-//using Parcial1.Models; 
+using Parcial1.Models; 
 
  
 
@@ -11,8 +11,7 @@ namespace Parcial1.DAL
 {
     public class Contexto : DbContext
     {
-        public int MyProperty { get; set; }
-
+        public DbSet<Productos> Productos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
