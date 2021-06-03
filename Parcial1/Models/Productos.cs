@@ -13,14 +13,14 @@ namespace Parcial1.Models
 
         public int ArticuloId { get; set; }
 
-        [Required(ErrorMessage = "El campo descripcion no debe estar vacio")]
+        [Required(ErrorMessage = "El campo descripción no debe estar vacío")]
         public string Descripcion { get; set; }
 
-        [Required(ErrorMessage = "El campo existencia no debe estar vacio")]
+        [Required(ErrorMessage = "El campo existencia no debe estar vacío")]
         [Range(1, int.MaxValue, ErrorMessage = "Por favor inserte un valor mayor a 0")]
         public int Existencia { get; set; }
 
-        [Required(ErrorMessage = "El campo costo no debe estar vacio")]
+        [Required(ErrorMessage = "El campo costo no debe estar vacío")]
         [Range(1, int.MaxValue, ErrorMessage = "Por favor inserte un valor mayor a 0")]
         public decimal Costo { get; set; }
 
